@@ -8,10 +8,9 @@ public class Divertidamente {
         System.out.println("Riley fez amizades na cidade?");
         fezAmizade = scanner.next();
 
-        System.out.println("Se sim, quantas ela fez? ");
-        qtdAmizades = scanner.nextInt();
-
         if(fezAmizade.equals("Sim")){
+             System.out.println("Quantas ela fez");
+             qtdAmizades = scanner.nextInt();
             alegria=qtdAmizades * 10;
         }else if(fezAmizade.equals("Não")){
            tristeza = 30;
@@ -29,7 +28,7 @@ public class Divertidamente {
         Double media = (a1 + a2 + a3)/3;
 
         if(media >= 7.00 ){
-          alegria2 = 50;
+         alegria += 50;
         }else{
          tristeza2 = 50;
         }
